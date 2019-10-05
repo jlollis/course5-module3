@@ -2,16 +2,12 @@
   <h3>Nothing found</h3>
 </div>
 
-<section>
-
-  <div class="container" ng-repeat="item in ctrl.found">
-    <h4>{{item.name}}</h4>
-    <div class="well">
-      <p>
-        {{item.short_name}}, {{item.description}}
-      </p>
-      <button class="btn btn-default" ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
-    </div>
+<div class="container" ng-repeat="item in ctrl.found">
+  <h4>{{item.name}}</h4>
+  <div class="well">
+    <p>
+      {{item.short_name}}, {{item.description}}
+    </p>
+    <button ng-click="ctrl.onRemove({index: $index});">Don't want this one!</button>
   </div>
-
-</section>
+</div>
