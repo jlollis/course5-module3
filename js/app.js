@@ -6,7 +6,7 @@
     .service('MenuSearchService', MenuSearchService)
     .directive('foundItems', FoundItemsDirective)
     .factory('MenuSearchFactory', MenuSearchFactory)
-    .constant('ApiBasePath', "https: //davids-restaurant.herokuapp.com/"); 
+    .constant('ApiBasePath', "https: //davids-restaurant.herokuapp.com"); 
 
   function FoundItemsDirective() {
     var ddo = {
